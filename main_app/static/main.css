@@ -1,0 +1,9 @@
+#banner{
+    min-height: 400px ;
+}
+
+
+#map{
+    height: 500px;
+    border: 1px solid red;
+}

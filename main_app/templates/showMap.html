@@ -1,0 +1,25 @@
+{%  extends 'default.html' %}
+
+{% block title %} showMap {% endblock %}
+
+{% block container %}
+    <div id="map"></div>
+{% endblock %}
+
+
+{% block script %}
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat:14.739402, lng:-17.396822},
+            zoom: 12
+            });
+        }
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaSt6pr_dPdDyen-Azq5F67nYHO6RT4cU&callback=initMap"></script>
+<!--
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEM20pcbJU5h1rFlmNvyfQ53hjU-WrU7g&callback=initMap" async defer></script>
+-->
+{% endblock %}
